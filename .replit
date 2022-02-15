@@ -1,0 +1,15 @@
+onBoot="cowsay Welcome to Nix on Replit!"
+run=["sh", "scripts/start.sh"]
+entrypoint = "main.go"
+
+[env]
+PGDATA = "/home/runner/data/${REPL_SLUG}/data"
+
+[languages.go]
+pattern = "**/*.go"
+
+[languages.go.languageServer]
+start = "gopls"
+
+[nix]
+channel = "unstable"
