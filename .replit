@@ -3,7 +3,8 @@ run=["sh", "scripts/start.sh"]
 entrypoint = "main.go"
 
 [env]
-PGDATA = "/home/runner/data/${REPL_SLUG}/data"
+REPLDIR = "/home/runner/${REPL_SLUG}"
+PGDATA = "/home/runner/misc/${REPL_SLUG}/postgresql"
 
 [languages.go]
 pattern = "**/*.go"

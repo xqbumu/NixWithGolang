@@ -1,5 +1,4 @@
-root_dir=/home/runner/${REPL_SLUG}
-source ${root_dir}/scripts/postgresql.sh
+source ${REPLDIR}/scripts/postgresql.sh
 
 # start nginx
 # pkill nginx
