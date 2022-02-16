@@ -1,4 +1,4 @@
-source ${REPLDIR}/scripts/postgresql.sh
+source ${MAINDIR}/scripts/postgresql.sh
 
 # start nginx
 # pkill nginx

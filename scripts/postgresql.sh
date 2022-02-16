@@ -4,7 +4,7 @@ if [ ! -e ${PGDATA} ]; then
   mkdir -p ${PGDATA}
   cd ${PGDATA}
   initdb ${PGDATA}
-  cp ${REPLDIR}/scripts/postgresql.conf.tpl ${PGDATA}/postgresql.conf
+  cp ${MAINDIR}/scripts/postgresql.conf.tpl ${PGDATA}/postgresql.conf
   socker_dir="${PGDATA}"
   sed -i "s#replace_unix_dir#${socker_dir}#" ${PGDATA}/postgresql.conf
   pg_ctl start -D ${PGDATA} -l ${PGDATA}.log

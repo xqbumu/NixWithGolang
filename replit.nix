@@ -1,6 +1,7 @@
 { pkgs }: {
     deps = [
         pkgs.cowsay
+        pkgs.ncdu
         pkgs.vim
         pkgs.gh
         pkgs.go_1_17
