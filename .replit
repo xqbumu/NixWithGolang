@@ -5,6 +5,7 @@ entrypoint = "main.go"
 [env]
 MAINDIR = "/home/runner/${REPL_SLUG}"
 PGDATA = "${MAINDIR}/.config/postgresql"
+GOCACHE = "${MAINDIR}/.config/go-build"
 GOPATH = "${MAINDIR}/.config/go"
 
 [languages.go]
